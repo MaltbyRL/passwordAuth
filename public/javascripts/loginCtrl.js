@@ -12,6 +12,7 @@ app.service('loginSvc', function($http, $state) {
   this.logmein = function(userObj) {
     $http.post('/users/login', userObj)
       .then(function(res) {
+        console.log("Token:",res)
         $state.go('home');
       })
   };

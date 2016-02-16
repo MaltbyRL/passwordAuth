@@ -16,10 +16,10 @@ router.post('/register', function(req, res, next) {
 });
 
 
-router.post('/login', function (req, res, next) {
-  console.log("users req:", req)
-  res.send({
-    token: token
+router.post('/login', function(req, res, next) {
+  User.login(req, function(err, token) {
+    res.send(err ? 400 : 200).send(err || token)
   });
 });
+
 module.exports = router;
