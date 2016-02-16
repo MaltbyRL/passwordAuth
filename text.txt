@@ -1,0 +1,20 @@
+get email, password
+  hash password
+    will look like a bunch of jumbled up characters,
+    hashing is a one way process. cant reverse it to get the password
+    hash will produce same hash from same password
+
+    salting the hash changes the result so people  cant look up hash value
+
+dont use cookies,
+  make it send a header,,
+  want the front end to send a request with header.
+  want every request that angular makes to have the header.
+  send the cookie in the response, not in a cookie in .send()
+
+
+header
+ -auth header will be in request,
+ -will be object of keys and values
+ -wont be useing cookie
+ -can set when and where they go

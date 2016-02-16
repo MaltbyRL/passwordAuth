@@ -1,0 +1,21 @@
+<div>
+  <h1>register</h1>
+
+    <form>
+      <div class="form-group">
+        <label for="task">User Name</label>
+        <input id="username" type="task" ng-model="user.username" placeholder="task" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label for="date">Password</label>
+        <input id="passwrd" type="password" ng-model="user.password" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label for="date">Password2</label>
+        <input id="passwrd" type="password" ng-model="user.password2" class="form-control"/>
+      </div>
+      <button style="background-color: brown; color: orange;" ng-click="register(user)" class="btn btn-default">register</button>
+      <button style="background-color: red; color: black;" class="btn btn-default">logout</button>
+    </form>
+  </h3>
+</div>

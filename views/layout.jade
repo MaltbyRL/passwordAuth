@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Rick's App
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css ')
+    link(rel='stylesheet', href='stylesheets/style.css')
+    script(src='bower_components/angular/angular.min.js') 
+    script(src='bower_components/angular-ui-router/release/angular-ui-router.min.js') 
+    script(src='module.js') 
+    script(src="javascripts/homeCtrl.js")
+    script(src="javascripts/registerCtrl.js")
+    script(src="javascripts/loginCtrl.js")
+    
+
+  
+  body
+    div(ng-app="ricksApp")
+        h3 Welcome to The Login world
+        button.btn.btn-default(ui-sref='login') login
+        button.btn.btn-default(ui-sref='register') register
+        button.btn.btn-default(ui-sref='home') home
+
+        
+        block content
+
+
+      script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+      script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+      block scripts
+    
