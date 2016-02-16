@@ -83,6 +83,7 @@ userSchema.statics.login = function(req, cb) {
     cb(err, founduser)
 
   })
+  
 }
 
 
